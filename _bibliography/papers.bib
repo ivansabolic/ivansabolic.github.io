@@ -1,115 +1,88 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+@INPROCEEDINGS{10278694,
+  author={Vršnak, Donik and Sabolić, Ivan and Subašić, Marko and Lončarić, Sven},
+  booktitle={2023 International Symposium on Image and Signal Processing and Analysis (ISPA)}, 
+  title={Computational Color Constancy-Based Backdoor Attacks}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-6},
+  keywords={Training;Computer vision;Additives;Image color analysis;Computational modeling;Pipelines;Lighting},
+  bibtex_show = {true},
+  abstract  = {Deep neural networks (DNNs) have become an
+integral part of many computer vision tasks. However, training
+complex neural networks requires a large amount of computational resources. Therefore, many users outsource training to
+third parties. This introduces an attack vector for backdoor
+attacks. These attacks are described as attacks in which the
+neural network behaves as expected for benign inputs but acts
+maliciously when a backdoor trigger is present in the input.
+Triggers are small, preferably stealthy additions to the input.
+However, most of these triggers are based on the additive model,
+i.e., the trigger is simply added onto the image. Furthermore,
+optimized triggers are artificial, which means that it is difficult
+or impossible to reproduce them in the real-world, making them
+impractical to use in a real-world setting. In this work, we present
+a novel way of trigger injection for the classification problem.
+It is based on the von Kries model for image color correction,
+a frequently used component in all image processing pipelines.
+Our trigger uses a multiplicative rather than an additive model.
+This makes it harder to detect the injection by defensive methods.
+Second, the trigger is based on real-world phenomena of changing
+illumination. Finally, it can be made harder to spot by a human
+observer, when compared to some additive triggers. We test
+the performance of our attack strategy against various defense
+methods on several frequently used datasets, and achieve excellent
+results. Furthermore, we show that the malicious behavior of
+models trained on artificially colored images can be activated
+in real-world scenarios, further increasing the usefulness of our
+attack strategy.},
+pdf       = {https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10278694},
+preview   = {color_constancy.png},
 }
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@inproceedings{Sabolic_2024_BMVC,
+author    = {Ivan Sabolic and Ivan Grubišić and Siniša Šegvić},
+title     = {Backdoor Defense through Self-Supervised and Generative Learning},
+booktitle = {35th British Machine Vision Conference 2024, {BMVC} 2024, Glasgow, UK, November 25-28, 2024},
+publisher = {BMVA},
+year      = {2024},
+url       = {https://papers.bmvc2024.org/0346.pdf},
+bibtex_show = {true},
+preview   = {bmvc_poster_sabolic-1.png},
+abstract  = {Backdoor attacks change a small portion of training data by introducing hand-crafted
+triggers and rewiring the corresponding labels towards a desired target class. Training on such data injects a backdoor which causes malicious inference in selected test
+samples. Most defenses mitigate such attacks through various modifications of the discriminative learning procedure. In contrast, this paper explores an approach based on
+generative modelling of per-class distributions in a self-supervised representation space.
+Interestingly, these representations get either preserved or heavily disturbed under recent
+backdoor attacks. In both cases, we find that per-class generative models allow to detect poisoned data and cleanse the dataset. Experiments show that training on cleansed
+dataset greatly reduces the attack success rate and retains the accuracy on benign inputs.},
+pdf       = {https://arxiv.org/pdf/2409.01185},
+code      = {https://github.com/ivansabolic/GSSD},
+selected  = {true},
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+@article{sabolic2025seal,
+  title={Seal Your Backdoor with Variational Defense},
+  author={Saboli{\'c}, Ivan and Grci{\'c}, Matej and {\v{S}}egvi{\'c}, Sini{\v{s}}a},
+  journal={International Conference on Computer Vision},
+  year={2025},
+  bibtex_show = {true},
+  preview   = {vibe.jpg},
+  abstract  = {We propose VIBE, a model-agnostic framework that trains
+classifiers resilient to backdoor attacks. The key concept
+behind our approach is to treat malicious inputs and corrupted labels from the training dataset as observed random
+variables, while the actual clean labels are latent. VIBE
+then recovers the corresponding latent clean label posterior through variational inference. The resulting training procedure follows the expectation-maximization (EM)
+algorithm. The E-step infers the clean pseudolabels by
+solving an entropy-regularized optimal transport problem,
+while the M-step updates the classifier parameters via gradient descent. Being modular, VIBE can seamlessly integrate with recent advancements in self-supervised representation learning, which enhance its ability to resist backdoor
+attacks. We experimentally validate the method effectiveness against contemporary backdoor attacks on standard
+datasets, a large-scale setup with 1k classes, and a dataset
+poisoned with multiple attacks. VIBE consistently outperforms previous defenses across all tested scenarios.},
+code      = {https://github.com/ivansabolic/VIBE},
+  pdf       = {https://arxiv.org/pdf/2503.08829},
+  selected  = {true},
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
-  selected={true},
-  inspirehep_id = {3255}
-}
-
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
-}
