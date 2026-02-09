@@ -23,7 +23,7 @@ announcements:
 
 ---
 
-I am a second-year PhD student in Computer Science at the University of Zagreb, Croatia, where I focus on building robust and trustworthy AI systems.
+I am a third-year PhD student in Computer Science at the University of Zagreb, Croatia, where I focus on building robust and trustworthy AI systems.
 
 My research centers on defending machine learning models against various poisoning attacks, with a particular interest in understanding how adversaries can manipulate training data and developing effective countermeasures.
 I am also intrigued by the theoretical foundations of probabilistic modeling and their practical implementations in real-world applications.
