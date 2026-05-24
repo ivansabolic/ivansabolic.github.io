@@ -37,6 +37,12 @@ ninja.data = [{
           section: "News",},{id: "news-paper-accepted-to-the-iccv-2025-tada",
           title: 'Paper accepted to the ICCV 2025! :tada:',
           description: "",
+          section: "News",},{id: "news-accepted-to-mats-10-0-stream-ukaisi-red-team-tada",
+          title: 'Accepted to MATS 10.0, stream UKAISI Red-Team :tada:',
+          description: "",
+          section: "News",},{id: "news-paper-accepted-to-icml-2026-tada",
+          title: 'Paper accepted to ICML 2026! :tada:',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
