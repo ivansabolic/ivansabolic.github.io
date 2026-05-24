@@ -8,8 +8,8 @@
           <div class="navbar-brand social">
             <a href="mailto:{{ site.data.socials.email }}" title="email"><i class="fa-solid fa-envelope"></i></a>
             <a href="https://github.com/{{ site.data.socials.github_username }}" title="GitHub"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/ivan-sabolic-44a17916a/" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://scholar.google.com/citations?user=6_sd6kgAAAAJ&hl=hr" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+            <a href="https://www.linkedin.com/in/{{ site.data.socials.linkedin_username }}/" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}&hl=en" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
           </div>
         {% endif %}
         {% if page.permalink != '/' %}
